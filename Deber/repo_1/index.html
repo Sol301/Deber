@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      //cuatrimestre del año en el que nos encontramos
+    /*  var fecha
+  fecha=new Date();
+  var mes=fecha.getMonth();
+  if (mes<4)
+  {
+    document.write('Nos encontramos en el primer cuatrimestre del año');
+  }
+  else
+  {
+    if (mes<8)
+    {
+      document.write('Nos encontramos en el segundo cuatrimestre del año');
+    }
+    else
+    {
+       document.write('Nos encontramos en el tercer cuatrimestre del año');
+    }
+  }*/
+    </script>
+<script>
+  //Salario
+  /*function cargar(sueldos)
+  {
+    var f;
+    for(f=0;f<sueldos.length;f++)
+    {
+      var v;
+      v=prompt('Ingrese sueldo:','');
+      sueldos[f]=parseInt(v);
+    }
+  }
+
+  function calcularGastos(sueldos)
+  {
+    var total=0;
+    var f;
+    for(f=0;f<sueldos.length;f++)
+    {
+      total=total+sueldos[f];
+    }
+    document.write('Listado de sueldos<br>');
+    for(f=0;f<sueldos.length;f++)
+    {
+      document.write(sueldos[f]+'<br>');
+    }
+    document.write('Total de gastos en sueldos:'+total);
+  }
+  function calcularPromedio(sueldos) {
+      var suma;
+      suma=0;
+      for(var f=0;f<5;f++) {
+          suma=suma+sueldos[f];
+      }
+      promedio=suma/5;
+      document.write('<br>');
+      document.write("Promedio de sueldos: "+promedio);
+  }
+
+  function mayoresMenores(sueldos) {
+      var may,men;
+      may=0;
+      men=0;
+      for(var f=0;f<5;f++) {
+          if (sueldos[f]>promedio) {
+        may++;
+          } else {
+              if (sueldos[f]<promedio) {
+                  men++;
+              }
+      }
+  }
+  document.write('<br>');
+  document.write("Cantidad de sueldos mayores al promedio: "+may);
+  document.write('<br>');
+  document.write("Cantidad de sueldos menores al promedio: "+men);
+}
+
+
+  var sueldos;
+  sueldos=new Array(5);
+  cargar(sueldos);
+  calcularGastos(sueldos);
+  calcularPromedio(sueldos);
+  mayoresMenores(sueldos);*/
+</script>
+
+    <script>
+      //botones
+      var cont =0;
+      var cont2 =0;
+      var cont3 =0;
+      function incrementar(){
+        cont++;
+        alert('El boton 1 se incremento: '+cont);
+      }
+      function incrementar2(){
+        cont2++;
+        alert('El boton 2 se incremento: '+cont2);
+      }
+      function incrementar3(){
+        cont3++;
+        alert('El boton 3 se incremento: '+cont3);
+      }
+    </script>
+      <form>
+        <input type="button" onclick="incrementar()" value="Boton 1">
+        <input type="button" onclick="incrementar2()" value="Boton 2">
+        <input type="button" onclick="incrementar3()" value="Boton 3">
+        </form>
+  </body>
+</html>
